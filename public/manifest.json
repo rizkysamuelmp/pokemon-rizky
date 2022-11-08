@@ -2,7 +2,7 @@
   "name": "Pokemon Rizky",
   "short_name": "Pokemon",
   "theme_color": "#058992",
-  "background_color": "#B5CDD2",
+  "background_color": "#058992",
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
@@ -44,6 +44,12 @@
     },
     {
       "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    },
+    {
+      "src": "maskable_icon.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "maskable"
