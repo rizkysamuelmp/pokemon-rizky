@@ -48,7 +48,7 @@ const Page = () => {
   }
 
   useEffect(() => {
-    if (history.length === 0) {
+    if (historyLocal && historyLocal?.length > 0) {
       // Sync redux history and local storage
       dispatch(setHistory(historyLocal));
     }
@@ -60,7 +60,7 @@ const Page = () => {
         dispatch(getPokemonData(historyLocal));
       }
     }
-  }, [pokemons, pokemonsLocal]);
+  }, [pokemons]);
 
   const handleDetail = (item) => {
     dispatch(setSelectPokemon(item));
