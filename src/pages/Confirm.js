@@ -266,7 +266,7 @@ const Confirm = () => {
       </p>
       <InputText
         value={note}
-        placeholder="Cari Pokémon"
+        placeholder="Contoh: stok awal"
         className="lg  px-4 xl:px-0 mt-2"
         onChange={(e) => setNote(e.target.value)}
       />
