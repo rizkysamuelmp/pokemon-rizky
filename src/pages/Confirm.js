@@ -159,7 +159,7 @@ const Confirm = () => {
 
   const [note, setNote] = useState("");
   return (
-    <div className="max-w-2xl m-auto flex flex-col gap-2 py-0 h-screen min-w-fit xl:py-16 text-black whitespace-nowrap pb-28">
+    <div className="max-w-2xl m-auto flex flex-col gap-2 py-0 min-w-fit xl:py-16 text-black whitespace-nowrap pb-28 h-full">
       {/* Header Desktop */}
       <div className="justify-between items-center hidden">
         <Button
@@ -278,11 +278,7 @@ const Confirm = () => {
 
       {/* Button */}
       <div className="flex gap-2 pt-4 self-end px-4 xl:px-0 mt-2">
-        <Button
-          variant="contained"
-          onClick={handleSave}
-          disabled={pcs === "0" || lusin === "0"}
-        >
+        <Button variant="contained" onClick={handleSave}>
           Simpan
         </Button>
         <Button
@@ -381,7 +377,7 @@ const Confirm = () => {
             <Button
               variant="contained"
               onClick={() => handleConfirm()}
-              disabled={pcs === "0" || lusin === ""}
+              disabled={pcs === "0" || lusin === "0"}
             >
               Simpan
             </Button>
