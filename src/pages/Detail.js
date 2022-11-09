@@ -31,6 +31,11 @@ const Detail = () => {
   const [pcs, setPcs] = useState("0");
   const [lusin, setLusin] = useState("0");
 
+  useEffect(() => {
+    console.warn("Isi pcs : ", pcs);
+    console.warn("Isi lusin : ", lusin);
+  }, [pcs, lusin]);
+
   // Page will back to home when there is no pokemon selected
   useEffect(() => {
     if (!selectPokemon) {
@@ -81,14 +86,18 @@ const Detail = () => {
   }));
 
   const handlePcs = (e) => {
-    if (e.target.value >= 0) {
+    if (parseInt(e.target.value) >= 0) {
       setPcs(e.target.value);
+    } else {
+      setPcs("0");
     }
   };
 
   const handleLusin = (e) => {
-    if (e.target.value >= 0) {
+    if (parseInt(e.target.value) >= 0) {
       setLusin(e.target.value);
+    } else {
+      setLusin("0");
     }
   };
 
@@ -332,7 +341,7 @@ const Detail = () => {
 
             {/* Input PCS */}
             <div className="grid grid-cols-4 border-b-2 items-center py-2">
-              <p className="col-span-1 font-nunito font-bold text-xxs">PCS</p>
+              <p className="col-span-1 font-nunito font-bold text-xxs">Pcs</p>
               <div className="col-span-2 flex justify-end items-center gap-1">
                 <p className="font-nunito font-normal text-right">1 x</p>
                 <InputText
@@ -383,7 +392,11 @@ const Detail = () => {
 
           {/* Button */}
           <div className="flex gap-2 pt-2 self-end px-0">
-            <Button variant="contained" onClick={handleConfirm}>
+            <Button
+              variant="contained"
+              onClick={handleConfirm}
+              disabled={pcs === "0" || lusin === ""}
+            >
               Simpan
             </Button>
             <Button
