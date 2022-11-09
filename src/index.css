@@ -344,8 +344,8 @@
   height: 0.25rem
 }
 
-#root .h-screen {
-  height: 100vh
+#root .h-full {
+  height: 100%
 }
 
 #root .h-10 {
@@ -354,6 +354,10 @@
 
 #root .h-6 {
   height: 1.5rem
+}
+
+#root .h-screen {
+  height: 100vh
 }
 
 #root .h-fit {
@@ -1590,6 +1594,10 @@
   padding-right: 0.25rem
 }
 
+#root .pb-28 {
+  padding-bottom: 7rem
+}
+
 #root .pr-12 {
   padding-right: 3rem
 }
@@ -1604,10 +1612,6 @@
 
 #root .pt-2 {
   padding-top: 0.5rem
-}
-
-#root .pb-28 {
-  padding-bottom: 7rem
 }
 
 #root .text-left {
