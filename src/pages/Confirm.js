@@ -377,7 +377,7 @@ const Confirm = () => {
             <Button
               variant="contained"
               onClick={() => handleConfirm()}
-              disabled={pcs === "0" || lusin === "0"}
+              disabled={pcs === "0" && lusin === "0"}
             >
               Simpan
             </Button>
