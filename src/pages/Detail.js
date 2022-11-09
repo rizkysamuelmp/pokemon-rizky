@@ -31,11 +31,6 @@ const Detail = () => {
   const [pcs, setPcs] = useState("0");
   const [lusin, setLusin] = useState("0");
 
-  useEffect(() => {
-    console.warn("Isi pcs : ", pcs);
-    console.warn("Isi lusin : ", lusin);
-  }, [pcs, lusin]);
-
   // Page will back to home when there is no pokemon selected
   useEffect(() => {
     if (!selectPokemon) {
