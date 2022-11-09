@@ -129,6 +129,14 @@
   isolation: auto
 }
 
+#root .z-50 {
+  z-index: 50
+}
+
+#root .z-10 {
+  z-index: 10
+}
+
 #root .col-span-2 {
   grid-column: span 2 / span 2
 }
@@ -222,6 +230,14 @@
 
 #root .mb-8 {
   margin-bottom: 2rem
+}
+
+#root .mt-16 {
+  margin-top: 4rem
+}
+
+#root .mt-20 {
+  margin-top: 5rem
 }
 
 #root .box-border {
@@ -1614,6 +1630,26 @@
   padding-top: 0.5rem
 }
 
+#root .pb-2 {
+  padding-bottom: 0.5rem
+}
+
+#root .pt-24 {
+  padding-top: 6rem
+}
+
+#root .pt-20 {
+  padding-top: 5rem
+}
+
+#root .pt-16 {
+  padding-top: 4rem
+}
+
+#root .pt-14 {
+  padding-top: 3.5rem
+}
+
 #root .text-left {
   text-align: left
 }
@@ -2264,6 +2300,10 @@
     margin-bottom: 0px
   }
 
+  #root .xl\:mt-0 {
+    margin-top: 0px
+  }
+
   #root .xl\:flex {
     display: flex
   }
@@ -2310,6 +2350,18 @@
 
   #root .xl\:pt-8 {
     padding-top: 2rem
+  }
+
+  #root .xl\:pb-2 {
+    padding-bottom: 0.5rem
+  }
+
+  #root .xl\:pt-6 {
+    padding-top: 1.5rem
+  }
+
+  #root .xl\:pt-0 {
+    padding-top: 0px
   }
 
   #root .xl\:text-xxl {

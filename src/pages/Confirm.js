@@ -165,7 +165,7 @@ const Confirm = () => {
       </div>
 
       {/* Header Mobile */}
-      <div className="flex justify-between items-center px-2 py-1 xl:hidden shadow-header w-screen">
+      <div className="flex justify-between items-center px-2 py-1 xl:hidden shadow-header w-screen fixed bg-white">
         <IconButton aria-label="arrow" onClick={handleBack}>
           <IconArrowLeft />
         </IconButton>
@@ -176,7 +176,7 @@ const Confirm = () => {
       </div>
 
       {/* Title */}
-      <h1 className="font-rubik font-bold xl:text-xxl text-lg flex items-center px-4 xl:px-0 my-6 xl:my-0">
+      <h1 className="font-rubik font-bold xl:text-xxl text-lg flex items-center px-4 xl:px-0 my-6 xl:my-0 mt-20 xl:mt-0">
         Konfirmasi update stok
       </h1>
 

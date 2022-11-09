@@ -160,7 +160,7 @@ const Detail = () => {
       </div>
 
       {/* Header Mobile */}
-      <div className="flex justify-between items-center px-2 py-1 xl:hidden shadow-header w-screen">
+      <div className="flex justify-between items-center px=b-2 py-1 xl:hidden shadow-header w-screen fixed bg-white z-50">
         <IconButton aria-label="arrow" onClick={handleBack}>
           <IconArrowLeft />
         </IconButton>
@@ -171,7 +171,7 @@ const Detail = () => {
       </div>
 
       {/* Title */}
-      <h1 className="font-rubik font-bold xl:text-xxl text-lg flex items-center px-4 xl:px-0 my-6 xl:my-0">
+      <h1 className="font-rubik font-bold xl:text-xxl text-lg flex items-center px-4 xl:px-0 my-6 xl:my-0 pt-16 xl:pt-6">
         {selectPokemon && capitalize(selectPokemon.name)}
       </h1>
 
@@ -307,7 +307,7 @@ const Detail = () => {
       <div
         className={`${
           isOpen ? "flex" : "hidden"
-        }  fixed left-0 top-0 w-screen h-screen bg-black bg-opacity-80 justify-center items-center`}
+        }  fixed left-0 top-0 w-screen h-screen bg-black bg-opacity-80 justify-center items-center z-50`}
       >
         <div className="flex flex-col bg-white p-6 rounded-lg shadow-modal gap-4 w-80 text-black">
           {/* Title */}
